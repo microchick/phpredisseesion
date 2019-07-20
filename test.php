@@ -4,9 +4,9 @@
 // 引入初始化文件
 require_once("redisSession.php");
 $handler = new redisSession(array(
-               'host' => "192.168.105.252",
+               'host' => "192.0.0.02",
                'port' => "6379",
-			   'password' => "a17D40F5BF8696A70236BCAF4626657C",
+	       'password' => "123456789",
 				));
 $handler->begin();
 // 这也是必须的，打开session，必须在 session_set_save_handler 后面执行
